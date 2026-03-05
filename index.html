@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!--
+    Landing Page - Lash Designer
+    - Layout premium escuro
+    - Mobile menu + WhatsApp links
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Lash Studio | Extensão de Cílios</title>
+  <meta name="description" content="Extensão de cílios com acabamento natural e durabilidade. Agende pelo WhatsApp." />
+
+  <!-- Fontes (opcional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- =========================
+       HEADER (Topo + CTA + Menu Mobile)
+       ========================= -->
+  <header class="header" id="topo">
+    <div class="container header__inner">
+      <img src="./assets/img/logo.svg" alt="Logotipo" class="logo" />
+
+      <div class="header__cta">
+        <a class="btn btn--ghost" href="#servicos">Ver serviços</a>
+
+        <a class="btn btn--primary" id="ctaHeaderWhats" href="#" target="_blank" rel="noopener">
+          Agendar no WhatsApp
+        </a>
+
+        <!-- Botão Hamburguer (mobile) -->
+        <button
+          class="hamburger"
+          id="btnMenu"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <div class="mobile" id="mobileMenu" aria-hidden="true">
+      <div class="container mobile__inner">
+        <a href="#servicos">Serviços</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#estudio">Estúdio</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="#localizacao">Localização</a>
+
+        <a class="btn btn--primary mobile__btn" id="ctaMobileWhats" href="#" target="_blank" rel="noopener">
+          Agendar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================
+         HERO
+         ========================= -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <h1 class="h1">
+            Realce seu olhar com
+            <span class="gold">extensão de cílios</span>
+            elegante e confortável
+          </h1>
+
+          <p class="lead">
+            Técnicas personalizadas para o seu formato de olhos, acabamento natural,
+            durabilidade e leveza.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" id="ctaHeroWhats" href="#" target="_blank" rel="noopener">
+              Agendar avaliação
+            </a>
+            <a class="btn btn--ghost" href="#resultados">Ver antes e depois</a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <strong>+200</strong>
+              <span>atendimentos realizados</span>
+            </div>
+            <div class="stat">
+              <strong>4.9★</strong>
+              <span>avaliação média</span>
+            </div>
+            <div class="stat">
+              <strong>100%</strong>
+              <span>foco em conforto</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="portrait">
+            <img src="assets/img/hero-modelo.jpg" alt="Foto da profissional (substituir)" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__fade"></div>
+    </section>
+
+    <!-- =========================
+         SOBRE
+         ========================= -->
+    <section class="section about" id="sobre">
+      <div class="container about__grid">
+        <div class="about__media">
+          <div class="frame">
+            <img src="assets/img/sobre-modelo.jpg" alt="Procedimento em andamento" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="about__content">
+          <h2 class="h2">Resultados <span class="gold">sob medida</span></h2>
+
+          <p class="text">
+            Cada aplicação é planejada para o seu estilo: do natural ao marcante,
+            respeitando a saúde dos fios e o seu conforto.
+          </p>
+
+          <ul class="checklist">
+            <li>Mapeamento do olhar (análise do formato)</li>
+            <li>Materiais de qualidade e acabamento delicado</li>
+            <li>Orientação completa de cuidados e manutenção</li>
+          </ul>
+
+          <div class="about__actions">
+            <a class="btn btn--primary" id="ctaAboutWhats" href="#" target="_blank" rel="noopener">
+              Falar no WhatsApp
+            </a>
+            <a class="btn btn--ghost" href="#servicos">Ver técnicas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         SERVIÇOS
+         ========================= -->
+    <section class="section services" id="servicos">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Técnicas e <span class="gold">serviços</span></h2>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Fio a fio</h3>
+            <p>Ideal para um visual natural com definição elegante.</p>
+          </article>
+
+          <article class="card">
+            <h3>Volume brasileiro</h3>
+            <p>Leveza e preenchimento equilibrado, ótimo para o dia a dia.</p>
+          </article>
+
+          <article class="card">
+            <h3>Volume russo</h3>
+            <p>Mais densidade e impacto, mantendo conforto e simetria.</p>
+          </article>
+
+          <article class="card">
+            <h3>Manutenção</h3>
+            <p>Reposição e alinhamento para manter o resultado impecável.</p>
+          </article>
+
+          <article class="card">
+            <h3>Remoção segura</h3>
+            <p>Remoção com cuidado para preservar os fios naturais.</p>
+          </article>
+
+          <article class="card card--highlight">
+            <h3>Avaliação</h3>
+            <p>Me diga seu objetivo e eu indico a técnica ideal para você.</p>
+            <a class="btn btn--mini btn--miniGold" data-whats="Olá, vim pelo seu site!">Fazer avaliação</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         RESULTADOS
+         ========================= -->
+    <section class="section results" id="resultados">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Veja o antes e o <span class="gold">depois</span></h2>
+        </div>
+
+        <div class="gallery">
+          <div class="img">
+            <figure class="shot"><img src="assets/img/r1.png" alt="Resultado 1" loading="lazy"></figure>
+          </div>
+
+          <div class="img">
+            <figure class="shot"><img src="assets/img/r2.png" alt="Resultado 2" loading="lazy"></figure>
+          </div>
+
+          <div class="img">
+            <figure class="shot"><img src="assets/img/r3.png" alt="Resultado 3" loading="lazy"></figure>
+          </div>
+
+          <div class="img">
+            <figure class="shot"><img src="assets/img/r4.png" alt="Resultado 4" loading="lazy"></figure>
+          </div>
+        </div>
+
+        <div class="center">
+          <a class="btn btn--primary" id="ctaResultsWhats" href="#" target="_blank" rel="noopener">
+            Quero agendar agora
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         DEPOIMENTOS
+         ========================= -->
+    <section class="section testimonials" id="depoimentos">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">O que dizem <span class="gold">as clientes</span></h2>
+        </div>
+
+        <div class="testi__grid">
+          <article class="testi">
+            <div class="testi__top">
+              <strong>Mariana S.</strong>
+              <span>⭐⭐⭐⭐⭐</span>
+            </div>
+            <p>“Ficou super natural e confortável. Atendimento impecável!”</p>
+          </article>
+
+          <article class="testi">
+            <div class="testi__top">
+              <strong>Camila R.</strong>
+              <span>⭐⭐⭐⭐⭐</span>
+            </div>
+            <p>“Amei o resultado! Explicou todos os cuidados e durou bastante.”</p>
+          </article>
+
+          <article class="testi">
+            <div class="testi__top">
+              <strong>Juliana P.</strong>
+              <span>⭐⭐⭐⭐⭐</span>
+            </div>
+            <p>“Perfeito! Meu olhar ficou mais destacado sem exagero.”</p>
+          </article>
+        </div>
+
+        <div class="center">
+          <a class="btn btn--ghost" id="ctaTestiWhats" href="#" target="_blank" rel="noopener">
+            Tirar dúvidas no WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         PRODUTOS
+         ========================= -->
+    <section class="section products" id="produtos">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Cuidados e <span class="gold">recomendações</span></h2>
+        </div>
+
+        <div class="gallery">
+          <article class="product">
+            <div class="img">
+              <img src="assets/img/prod_01.jpg" alt="Kit Cherry" loading="lazy">
+            </div>
+
+            <h3 class="gold">Kit Cherry</h3>
+            <p>
+              Desenvolvido para transformar o processo de adesão dos fios,
+              equilibrando rapidez e retenção com precisão.
+            </p>
+          </article>
+
+          <article class="product">
+            <div class="img">
+              <img src="assets/img/prod_02.jpg" alt="Shampoo" loading="lazy">
+            </div>
+
+            <h3 class="gold">Shampoo</h3>
+            <p>A espuma de limpeza SOFT SNOW entrega uma experiência única desde o primeiro uso.</p>
+          </article>
+
+          <article class="product">
+            <div class="img">
+              <img src="assets/img/prod_03.jpg" alt="Hidratação de fios" loading="lazy">
+            </div>
+
+            <h3 class="gold">Hidratação de fios</h3>
+            <p>Higieniza, limpa e hidrata o fio profundamente deixando pronto para uma boa retenção.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         ESTÚDIO
+         ========================= -->
+    <section class="section studio" id="estudio">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Conheça o <span class="gold">estúdio</span></h2>
+        </div>
+
+        <div class="studio-text">
+          <p class="text">Ambiente preparado para um atendimento confortável e seguro.</p>
+        </div>
+
+        <div class="gallery">
+          <div class="img">
+            <figure class="studio__shot"><img src="assets/img/e1.jpg" alt="Foto do estúdio 1" loading="lazy"></figure>
+          </div>
+          <div class="img">
+            <figure class="studio__shot"><img src="assets/img/e2.jpg" alt="Foto do estúdio 2" loading="lazy"></figure>
+          </div>
+          <div class="img">
+            <figure class="studio__shot"><img src="assets/img/e3.jpg" alt="Foto do estúdio 3" loading="lazy"></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         FAQ
+         ========================= -->
+    <section class="section faq" id="faq">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Perguntas <span class="gold">frequentes</span></h2>
+        </div>
+
+        <div class="accordion" id="accordion">
+          <button class="acc__btn" type="button">
+            Dói para aplicar?
+            <span class="acc__icon">+</span>
+          </button>
+          <div class="acc__panel">
+            <p>Não. O procedimento é feito com cuidado e conforto. Você fica de olhos fechados e relaxa durante a aplicação.</p>
+          </div>
+
+          <button class="acc__btn" type="button">
+            Quanto tempo dura?
+            <span class="acc__icon">+</span>
+          </button>
+          <div class="acc__panel">
+            <p>A durabilidade varia com cuidados e ciclo natural dos fios. Em geral, recomenda-se manutenção a cada 15–25 dias.</p>
+          </div>
+
+          <button class="acc__btn" type="button">
+            Posso molhar e usar maquiagem?
+            <span class="acc__icon">+</span>
+          </button>
+          <div class="acc__panel">
+            <p>Sim, após o tempo recomendado (geralmente 24h). Evite produtos oleosos na região dos olhos para não reduzir a fixação.</p>
+          </div>
+
+          <button class="acc__btn" type="button">
+            Tem contraindicação?
+            <span class="acc__icon">+</span>
+          </button>
+          <div class="acc__panel">
+            <p>Em casos de alergias/irritações recorrentes, é importante avisar antes. A avaliação ajuda a indicar a melhor opção.</p>
+          </div>
+        </div>
+
+        <div class="center">
+          <a class="btn btn--primary" id="ctaFaqWhats" href="#" target="_blank" rel="noopener">
+            Quero agendar
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         LOCALIZAÇÃO
+         ========================= -->
+    <section class="section location" id="localizacao">
+      <div class="container location__grid">
+        <div class="box-contato">
+          <h2 class="h2">Vamos agendar <span class="gold">seu horário</span></h2>
+          <p class="text">Atendimento com hora marcada. Clique no WhatsApp para consultar horários e valores.</p>
+
+          <div class="location__actions">
+            <a class="btn btn--primary" id="ctaLocationWhats" href="#" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+            <a class="btn btn--ghost" href="#topo">Voltar ao topo</a>
+          </div>
+        </div>
+
+        <div class="map">
+          <iframe
+            title="Mapa"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Av.%20Paulista,%201000&output=embed"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <div class="brand brand--footer">
+          <img src="assets/img/logo.svg" alt="Logo" />
+        </div>
+      </div>
+
+      <div class="footer__cols">
+        <div>
+          <h4>Links</h4>
+          <a href="#servicos">Serviços</a>
+          <a href="#resultados">Resultados</a>
+          <a href="#faq">Dúvidas</a>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <a id="ctaFooterWhats" href="#" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="#localizacao">Localização</a>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <a href="#" aria-label="Instagram (substituir)">Instagram</a>
+          <a href="#" aria-label="TikTok (substituir)">TikTok</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <small>© <span id="year"></span> Lash Studio • Todos os direitos reservados.</small>
+      <small>Feito por <a href="https://api.whatsapp.com/send/?phone=5511959003069&text=Ol%C3%A1%2C+vim+pelo+seu+site%21&type=phone_number&app_absent=0" target="_blank"  class="link">Jackson Designer</a></small>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a class="whats-float" id="whatsFloat" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <img class="whats-float__dot" src="assets/img/whats-logo.svg" alt="WhatsApp" />
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
