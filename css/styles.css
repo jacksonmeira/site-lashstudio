@@ -1,9 +1,4 @@
-/*
-  Estilo premium escuro com dourado
-  - Código organizado por seções
-  - Ajuste do hamburger (3 barras certinhas)
-  - Ajuste do width no mobile (evita quebrar em telas menores)
-*/
+
 
 :root{
   --bg: #070707;
@@ -22,7 +17,7 @@
   --ff-body: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
-/* Reset básico */
+
 *{ box-sizing: border-box; }
 html{ scroll-behavior: smooth; }
 img{ max-width: 100%; display:block; }
@@ -47,7 +42,7 @@ body{
 .center{ display:flex; justify-content:center; margin-top: 18px; }
 
 /* Logo */
-.logo{ width: 20%; }
+.logo{ width: 30%; }
 
 /* Tipografia */
 .h1{
@@ -149,10 +144,10 @@ body{
 }
 
 /* =========================
-   HAMBURGER (corrigido)
+  
    ========================= */
 .hamburger{
-  display:none; /* só aparece no mobile */
+  display:none; 
   width: 46px;
   height: 42px;
   border-radius: 12px;
@@ -160,7 +155,7 @@ body{
   background: rgba(255,255,255,0.04);
   cursor:pointer;
 
-  /* garante as 3 barras empilhadas */
+  
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -579,7 +574,7 @@ body{
 .whats-float:hover{ background: rgba(37,211,102,0.18); }
 
 /* =========================
-   RESPONSIVO (mantendo seus hides)
+   RESPONSIVO 
    ========================= */
 @media (max-width: 980px){
 
@@ -589,7 +584,7 @@ body{
 
   .lead{ margin: auto; }
 
-  /* Mantido: você esconde botões no mobile */
+
   .header__cta a{
     display: none;
   }
@@ -618,7 +613,7 @@ body{
     margin: auto;
   }
 
-  /* Mantido */
+
   .hero__actions{ display: none; }
 
   .hero__stats{
@@ -628,12 +623,12 @@ body{
     margin: auto;
   }
 
-  /* Mantido */
+
   .portrait img{ display: none; }
 
   .img img{ margin: auto; }
 
-  /* ✅ Ajuste: não usar width fixo (450/400), e sim max-width */
+ 
   .hero{
     width: 100%;
     max-width: 450px;
@@ -659,7 +654,7 @@ body{
   .h2{ text-align: center; }
   .location__actions{ justify-content: center; }
 
-  /* Mostra hamburger no mobile */
+  
   .hamburger{
     display:flex;
   }
@@ -696,8 +691,9 @@ body{
     justify-content: center;
   }
 
-  /* deixa o max-width ainda respeitado em telas menores */
+  
   .hero, .studio{
     max-width: 100%;
   }
+
 }
